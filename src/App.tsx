@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-// some stuff
+import './App.scss';
+import { Navigation } from './components/Navigation';
+import { GlobalHeading } from './components/GlobalHeading';
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      Sam Bocharov's personal website
-      <p>Coming soon</p>
+    <div className="app">
+      <GlobalHeading />
+      <Navigation />
     </div>
   )
 }

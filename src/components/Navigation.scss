@@ -1,0 +1,13 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.nav-element {
+    margin-right: 64px;
+
+    &:last-of-type {
+        margin-right: 0px;
+    }
+}
