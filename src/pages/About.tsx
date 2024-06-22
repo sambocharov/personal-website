@@ -1,8 +1,8 @@
-
+import { translate } from "../utils/translation/translate";
 const About = () => {
   return (
     <div className="about">
-      about
+      {translate('about')}
     </div>
   )
 }
