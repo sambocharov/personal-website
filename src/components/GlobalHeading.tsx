@@ -1,11 +1,12 @@
+import { translate } from '../utils/translation/translate';
 import './GlobalHeading.scss';
 
 
 const GlobalHeading = () => {
   return (
     <header>
-      <div>Sam Bocharov. Developer. </div>
-      <div className="shame-message">I know website is not responsive...yet. I'm working on it. Yes, I'm ashamed</div>
+      <div>{translate('top_header')}</div>
+      <div className="shame-message">{translate('top_subheader')}</div>
     </header>
   )
 }
