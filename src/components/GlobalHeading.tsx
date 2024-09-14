@@ -1,12 +1,12 @@
 import { translate } from '../utils/translation/translate';
 import './GlobalHeading.scss';
+import { Navigation } from './Navigation';
 
 
 const GlobalHeading = () => {
   return (
     <header>
-      <div>{translate('top_header')}</div>
-      <div className="shame-message">{translate('top_subheader')}</div>
+      <Navigation />
     </header>
   )
 }

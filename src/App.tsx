@@ -13,7 +13,6 @@ function App() {
     <Router>
       <div className="app">
         <GlobalHeading />
-        <Navigation />
         <Routes>
           <Route path="/" element={<About />}/>
           <Route path="/cv" element={<CV />}/>

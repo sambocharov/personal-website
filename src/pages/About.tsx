@@ -1,8 +1,10 @@
 import { translate } from "../utils/translation/translate";
+import '../styles/About.scss'
 const About = () => {
   return (
     <div className="about">
-      {translate('about')}
+      <div className="title">{translate('top_header')}</div>
+      <div className="shame-message">{translate('top_subheader')}</div>
     </div>
   )
 }
