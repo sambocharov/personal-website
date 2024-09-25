@@ -4,7 +4,7 @@ import './secret.scss'
 const Input = ({ setPassed }: any) => {
   return (
     <div className="input-container">
-      <div className="hint">Ask a mafia-frog for a passphrase (check inner pocket if he's not giving it to you voluntarily). If nothing found - ask your dumb ass husband because he probably failed it all</div>
+      <div className="hint">Ask a mafia-frog for a passphrase (he's probably sitting on it). If nothing found - ask your dumb ass husband because he probably failed it all</div>
       <input className="stylish-input" type="text" placeholder="Enter a passphrase" onChange={(e) => { if (e.target.value === 'the best artist ever') setPassed(true)}}/>
     </div>
   )
@@ -23,7 +23,7 @@ const SecretComponent = () => (
 
 
 const Churros = () => {
-  const [passed, setPassed] = useState(true);
+  const [passed, setPassed] = useState(false);
   return (
     <div className="churros">
     {passed ? <SecretComponent /> : <Input setPassed={setPassed} />}
